@@ -1,0 +1,33 @@
+{
+    "name": "maxdancepro/yii2-autocomplete",
+    "description": "Yii2 Jui AutoComplete with Id field widget",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"," maxdance","autocomplete"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maksim Vorozhtsov",
+            "email": "myks1992@mail.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-jui": "~2.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "maxdancepro\\autocomplete\\": "src/"
+        }
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
+
+
