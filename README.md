@@ -1,54 +1,54 @@
-Yii2 Jui AutoComplete with Id field widget
+Yii2 Jui Автозаполнение с виджетом поля Id
 ==========================================
-Yii2 Jui AutoComplete with Id field widget
+Yii2 Jui Автозаполнение с виджетом поля Id
 
-Installation
+Установка
 ------------
 
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+Предпочтительный способ установить это расширение через [composer](http://getcomposer.org/download/).
 
-Either run
+Либо
 
 ```
 php composer.phar require --prefer-dist maxdancepro/yii2-autocomplete "*"
 ```
 
-or add
+или добавить
 
 ```
 "maxdancepro/yii2-autocomplete": "*"
 ```
 
-to the require section of your `composer.json` file.
+в требуемый раздел вашего `composer.json` файл.
 
 
-Usage
+Использование
 -----
 
-Once the extension is installed, simply use it in your code by  :
+После того, как расширение установлено, просто используйте его в своем коде:
 
 ```php
-<?= $form->field($model, 'attribute_id')->widget(AutoCompleteWithId::className()); ?>
+<?= $form->field($model, 'attribute_id')->widget(AutoComplete::className()); ?>
 ```
 
  
-with ajax request
+Для Ajax запроса
 ```php
-echo $form->field($model, 'attribute')->widget(AutoCompleteWithId::className(), [
+echo $form->field($model, 'attribute')->widget(AutoComplete::className(), [
 'clientOptions' => [
      'source' => Url::to(['/controller/autocomplete'])
 ]
 ])
 ```
 
-or default with ajax request(Url::to(['/attibute/autocomplete']))
+Или по умолчанию с запросом ajax (Url::to(['/attibute/autocomplete']))
 ```php
-echo $form->field($model, 'attribute_id')->widget(AutoCompleteWithId::className());
+echo $form->field($model, 'attribute_id')->widget(AutoComplete::className());
 ```
 
-or with array
+Или с массивом
 ```php
-echo $form->field($model, 'attribute_id')->widget(AutoCompleteWithId::className(), [
+echo $form->field($model, 'attribute_id')->widget(AutoComplete::className(), [
 'clientOptions' => [
      'source' => [
          ['id' => 1, 'label' => 'Label 1'],
